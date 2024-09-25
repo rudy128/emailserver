@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Nav = () => {
   return (
-    <div className='w-[100dvw] h-[7dvh] flex items-center justify-between shadow border-b-2 rounded-b-lg'>
+    <div className='w-[100dvw] h-[7dvh] flex items-center sticky z-10 top-0 left-0 backdrop-blur-3xl justify-between shadow border-b-2 rounded-b-lg'>
       <div className='flex space-x-10 justify-between px-5'>
         <div className='lg:hidden flex items-center'>
           <Sheet>
@@ -48,7 +48,7 @@ const Nav = () => {
           </Link>
           <div className='text-2xl'>/</div>
           <Link href={'/signup'} >
-            <div className='border text-white text-lg border-white rounded-lg px-2'>Signup</div>
+            <div className='border bg-white text-black text-lg border-white rounded-xl group px-2'>Signup{" "}<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span></div>
           </Link>
         </div>
       </div>

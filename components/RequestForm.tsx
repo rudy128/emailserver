@@ -47,8 +47,8 @@ const RequestForm = (props: FormData) => {
     }
 
     return (
-        <div className='w-full h-full flex justify-center items-center'>
-            <div className={`border rounded-xl flex justify-center items-center w-3/6 lg:w-2/5 p-5 ${props.signup == true ? 'h-3/4' : 'h-1/2'}`}>
+        <div className='w-full h-full flex backdrop-blur-xl justify-center items-center'>
+            <div className={`border rounded-xl flex justify-center items-center z-10 backdrop-blur-3xl w-3/6 lg:w-2/5 p-5 ${props.signup == true ? 'h-3/4' : 'h-1/2'}`}>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="relative space-y-8 flex flex-col justify-center items-center w-full h-full">
                         <div className="text-5xl">{props.header}</div>
